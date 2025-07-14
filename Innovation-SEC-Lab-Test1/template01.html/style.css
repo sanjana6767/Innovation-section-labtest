@@ -1,0 +1,77 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, #00bcd4, #ffeb3b); /* Sky Blue to Yellow */
+  color: #fff;
+  padding: 60px 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Impact Boxes */
+.impact-box {
+  background-color: #e6f7f9;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn-outline-light {
+  border: 2px solid white;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #00bcd4;
+}
+
+/* Form */
+form input, form textarea, form select {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.3);
+  outline: none;
+}
+
+/* Footer */
+footer {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
