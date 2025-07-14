@@ -1,27 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Helping Hands | Donate for a Better Tomorrow</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-      <script src="./bootstrap-5.0.2-dist (2)/js/bootstrap.bundle.min.js"></script>
-      <div class="card" style="width: 18rem;">
-        <img src="cake-1971552_1280.jpg" class="card-img-top" alt="...">
-        < class="food card">
-          <h5 class="food card">food card</h5>
-          <p class="card-text">this food is a important source to live our life healthy and happy </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-    <script src="./bootstrap-5.0.2-dist (2)/js/bootstrap.bundle.min.js"></script>
-    <div class="card" style="width: 18rem;">
-        <img src="books-109524_1280.jpg" class="card-img-top" alt="...">
-        <div class="education card">
-          <h5 class="education card">food card</h5>
-          <p class="card-text">education is more importat in everyones life </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Helping Hands</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#help">How to Help</a></li>
+        <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+      </ul>
     </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero d-flex align-items-center justify-content-center text-center">
+  <div>
+    <h1 class="display-4 fw-bold">Donate Food. Change Lives.</h1>
+    <p class="lead">Join our mission to fight hunger and bring hope to those in need.</p>
+    <a href="#donate" class="btn btn-outline-light mt-3">Become a Donor</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title">Why We Exist</h2>
+    <p class="lead">Millions sleep hungry every night. Helping Hands aims to change that — one meal at a time. Your small act of kindness can feed a family today.</p>
+  </div>
+</section>
+
+<!-- Impact Section -->
+<section id="impact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Your Impact</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="impact-box">
+          <h3>25,000+</h3>
+          <p>Meals Distributed</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="impact-box">
+          <h3>10+</h3>
+          <p>Communities Reached</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="impact-box">
+          <h3>100+</h3>
+          <p>Volunteers Involved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How You Can Help -->
+<section id="help" class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title">How You Can Help</h2>
+    <p class="lead">Whether it’s donating a meal, sharing resources, or volunteering — every action matters.</p>
+    <ul class="list-unstyled">
+      <li>🍱 Donate surplus food or sponsor meals</li>
+      <li>⏰ Volunteer your time to serve</li>
+      <li>📣 Spread the word in your network</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Donate Form -->
+<section id="donate" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Donation Details</h2>
+    <form>
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="type" class="form-label">Type of Donation</label>
+        <select class="form-select" id="type">
+          <option>Food Donation</option>
+          <option>Meal Sponsorship</option>
+          <option>Other Support</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message / Details</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Tell us how you'd like to help..."></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-5">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-3">
+  <p>&copy; 2025 Helping Hands. Together, we make a difference.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
